@@ -147,7 +147,8 @@ namespace RBX_Alt_Manager
             this.manualToolStripMenuItem,
             this.bulkUserPassToolStripMenuItem,
             this.byCookieToolStripMenuItem,
-            this.customURLJSToolStripMenuItem});
+            this.customURLJSToolStripMenuItem,
+            this.customURLJSMassToolStripMenuItem});
             this.AddAccountsStrip.Name = "AddAccountsStrip";
             this.AddAccountsStrip.Size = new System.Drawing.Size(173, 92);
             // 
@@ -178,6 +179,13 @@ namespace RBX_Alt_Manager
             this.customURLJSToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.customURLJSToolStripMenuItem.Text = "Custom (URL + JS)";
             this.customURLJSToolStripMenuItem.Click += new System.EventHandler(this.customURLJSToolStripMenuItem_Click);
+            // 
+            // customURLJSMassToolStripMenuItem
+            // 
+            this.customURLJSMassToolStripMenuItem.Name = "customURLJSMassToolStripMenuItem";
+            this.customURLJSMassToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.customURLJSMassToolStripMenuItem.Text = "Custom Mass (URL + JS)";
+            this.customURLJSMassToolStripMenuItem.Click += new System.EventHandler(this.customURLJSMassToolStripMenuItem_Click);
             // 
             // Remove
             // 

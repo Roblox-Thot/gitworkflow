@@ -1842,6 +1842,27 @@ namespace RBX_Alt_Manager
             }
         }
 
+        private void customURLJSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int Count = 1;
+
+            int.TryParse(ShowDialog("Amount (Limited to 15)", "Launch Browser", "1"), out Count);
+
+            if (Uri.TryCreate(ShowDialog("URL", "Launch Browser", "https://roblox.com/"), UriKind.Absolute, out Uri Link))
+            {
+                string Script = ShowDialog("Javascript", "Launch Browser", big: true);
+
+                var Size = new System.Numerics.Vector2(550, 440);
+                AccountBrowser.CreateGrid(Size);
+
+                for (int i = 0; i < Math.Min(Count, 15); i++) {
+                    var Browser = new AccountBrowser() { Size = Size, Index = i };
+
+                    _ = Browser.LaunchBrowser(Url: Link.ToString(), Script: Script, PostNavigation: async (p) => await Browser.LoginTask(p));
+                }
+            }
+        }
+
         private void copyProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             List<string> Profiles = new List<string>();
