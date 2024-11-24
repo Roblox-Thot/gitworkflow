@@ -632,19 +632,6 @@ namespace RBX_Alt_Manager
         "e Server link in this box to join it.");
             this.JobID.Click += new System.EventHandler(this.JobID_Click);
             // 
-            // DonateButton
-            // 
-            this.DonateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DonateButton.FlatAppearance.BorderSize = 0;
-            this.DonateButton.Image = global::RBX_Alt_Manager.Properties.Resources.donation;
-            this.DonateButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.DonateButton.Location = new System.Drawing.Point(750, 6);
-            this.DonateButton.Name = "DonateButton";
-            this.DonateButton.Size = new System.Drawing.Size(24, 24);
-            this.DonateButton.TabIndex = 1001;
-            this.DonateButton.UseVisualStyleBackColor = true;
-            this.DonateButton.Click += new System.EventHandler(this.DonateButton_Click);
-            // 
             // AccountsView
             // 
             this.AccountsView.AllColumns.Add(this.Username);
